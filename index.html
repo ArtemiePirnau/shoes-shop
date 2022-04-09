@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Internet-Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/jquery.rateyo.min.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__top">
+        <div class="container">
+          <div class="header__top-inner">
+            <div class="burger"><span></span></div>
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__list-item">
+                  <a href="#" class="menu__list-link">Доставка</a>
+                </li>
+                <li class="menu__list-item">
+                  <a href="#" class="menu__list-link">Обувь</a>
+                </li>
+                <li class="menu__list-item">
+                  <a href="#" class="menu__list-link">Новинки</a>
+                </li>
+                <li class="menu__list-item menu__list-shoes">
+                  <a href="#" class="menu__list-link">Кеды</a>
+                </li>
+                <li class="menu__list-item menu__list-shoes">
+                  <a href="#" class="menu__list-link">Ботинки</a>
+                </li>
+                <li class="menu__list-item menu__list-shoes">
+                  <a href="#" class="menu__list-link">Зимняя</a>
+                </li>
+                <li class="menu__list-item menu__list-shoes">
+                  <a href="#" class="menu__list-link">Детская</a>
+                </li>
+                <li class="menu__list-item menu__list-shoes">
+                  <a href="#" class="menu__list-link">Шлепки</a>
+                </li>
+              </ul>
+            </nav>
+            <a class="logo" href="/"
+              ><img class="logo__image" src="images/icons/logo.png" alt="logo"
+            /></a>
+            <div class="info">
+              <div class="info__time">
+                <p class="info__text">Мы работаем</p>
+                <p class="hours">09:00 - 20:00</p>
+              </div>
+              <div class="sales">
+                <p class="info__text">Отдел продаж</p>
+                <p class="number">0 68 800 900</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <div class="container">
+          <div class="header__bottom-inner">
+            <div class="header__bottom-produses">
+              <div class="menuToggle"><span></span></div>
+              <p class="menuToggle__text">Обувь</p>
+              <ul class="product__catalog">
+                <li class="catalog__item">
+                  <a class="catalog__link" href="#">Кроссовки</a>
+                </li>
+                <li class="catalog__item">
+                  <a class="catalog__link" href="product.html">Кеды</a>
+                </li>
+                <li class="catalog__item">
+                  <a class="catalog__link" href="#">Ботинки</a>
+                </li>
+                <li class="catalog__item">
+                  <a class="catalog__link" href="#">Зимняя</a>
+                </li>
+                <li class="catalog__item">
+                  <a class="catalog__link" href="#">Детская</a>
+                </li>
+                <li class="catalog__item">
+                  <a class="catalog__link" href="#">Шлепки</a>
+                </li>
+              </ul>
+            </div>
+            <form class="form" action="#">
+              <input class="form__input" type="text" placeholder="Поиск" />
+            </form>
+            <ul class="user__list">
+              <li class="user__list-item">
+                <a href="#" class="user__list-link"
+                  ><img class="user__img" src="images/icons/heart.svg" alt=""
+                /></a>
+              </li>
+              <li class="user__list-item">
+                <a href="#" class="user__list-link"
+                  ><img class="user__img" src="images/icons/user.svg" alt=""
+                /></a>
+              </li>
+              <li class="user__list-item">
+                <a href="#" class="user__list-link"
+                  ><img
+                    class="user__img"
+                    src="images/icons/basket.svg"
+                    alt=""
+                  />
+                  <p class="basket-num">3</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="banner">
+      <a class="banner__item" href="#">
+        <picture>
+          <source
+            type="image/webp"
+            srcset="images/content/slider-banner-1.webp"
+            class="banner__img"
+          />
+          <source
+            type="image/jpg"
+            srcset="images/content/slider-banner-1.jpg"
+            class="banner__img"
+          />
+          <img
+            src="images/content/slider-banner-1.jpg"
+            alt="bg"
+            class="banner__img"
+            title=""
+          />
+        </picture>
+      </a>
+      <a class="banner__item" href="#">
+        <picture>
+          <source
+            type="image/webp"
+            srcset="images/content/slider-banner-2.webp"
+            class="banner__img"
+          />
+          <source
+            type="image/jpg"
+            srcset="images/content/slider-banner-2.jpg"
+            class="banner__img"
+          />
+          <img
+            src="images/content/slider-banner-2.jpg"
+            alt="bg"
+            class="banner__img"
+            title=""
+          />
+        </picture>
+      </a>
+      <a class="banner__item" href="#">
+        <picture>
+          <source
+            type="image/webp"
+            srcset="images/content/slider-banner-3.webp"
+            class="banner__img"
+          />
+          <source
+            type="image/jpg"
+            srcset="images/content/slider-banner-3.jpg"
+            class="banner__img"
+          />
+          <img
+            src="images/content/slider-banner-3.jpg"
+            alt="bg"
+            class="banner__img"
+            title=""
+          />
+        </picture>
+      </a>
+    </div>
+    <section class="search">
+      <div class="container">
+        <div class="search__inner">
+          <div class="search__tabs">
+            <a class="search__tabs-item tab-active tab" href="#tab-1"
+              >Поиск по бренду </a
+            ><a class="search__tabs-item tab" href="#tab-2"
+              >Поиск по названию обувь </a
+            ><a class="search__tabs-item tab" href="#tab-3">Поиск по цене</a>
+          </div>
+          <div class="search__info">
+            <div
+              id="tab-1"
+              class="tabs__info search__info-item tabs__info-active"
+            >
+              <form class="search__info-form" action="#">
+                <input
+                  class="search__info-input"
+                  type="text"
+                  placeholder="Введите бренд"
+                />
+              </form>
+            </div>
+            <div
+              id="tab-2"
+              class="tabs__info search__info-item search__info-item"
+            >
+              <form class="search__info-form" action="#">
+                <input
+                  class="search__info-input"
+                  type="text"
+                  placeholder="Введите название обувь"
+                />
+              </form>
+            </div>
+            <div
+              id="tab-3"
+              class="tabs__info search__info-item search__info-item"
+            >
+              <form class="search__info-form" action="#">
+                <input
+                  class="search__info-input"
+                  type="text"
+                  placeholder="Введите цену"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="categories">
+      <div class="container">
+        <div class="categories__inner">
+          <a class="categories__item" href="#">
+            <div class="categories__info-item">
+              <h4 class="categories__info-title">Кроссовки</h4>
+              <p class="categories__info-text">150+ товаров</p>
+            </div>
+            <div class="categories__info-img">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="images/content/product-1.webp"
+                  class="categories__img nike"
+                />
+                <source
+                  type="image/jpg"
+                  srcset="images/content/product-1.png"
+                  class="categories__img nike"
+                />
+                <img
+                  class="categories__img nike"
+                  src="images/content/product-1.png"
+                  alt=""
+                />
+              </picture>
+            </div> </a
+          ><a class="categories__item" href="#">
+            <div class="categories__info-item">
+              <h4 class="categories__info-title">Ботинки</h4>
+              <p class="categories__info-text">100+ товаров</p>
+            </div>
+            <div class="categories__info-img">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="images/content/product-2.webp"
+                  class="categories__img boots"
+                />
+                <source
+                  type="image/jpg"
+                  srcset="images/content/product-2.png"
+                  class="categories__img boots"
+                />
+                <img
+                  class="categories__img boots"
+                  src="images/content/product-2.png"
+                  alt=""
+                />
+              </picture>
+            </div> </a
+          ><a class="categories__item" href="#">
+            <div class="categories__info-item">
+              <h4 class="categories__info-title">Детская</h4>
+              <p class="categories__info-text">120+ товаров</p>
+            </div>
+            <div class="categories__info-img">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="images/content/product-3.webp"
+                  class="categories__img children"
+                />
+                <source
+                  type="image/jpg"
+                  srcset="images/content/product-3.png"
+                  class="categories__img children"
+                />
+                <img
+                  class="categories__img children"
+                  src="images/content/product-3.png"
+                  alt=""
+                />
+              </picture>
+            </div> </a
+          ><a class="categories__item" href="product.html">
+            <div class="categories__info-item">
+              <h4 class="categories__info-title">Кеды</h4>
+              <p class="categories__info-text">90+ товаров</p>
+            </div>
+            <div class="categories__info-img">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="images/content/product-4.webp"
+                  class="categories__img sneakers"
+                />
+                <source
+                  type="image/jpg"
+                  srcset="images/content/product-4.png"
+                  class="categories__img sneakers"
+                />
+                <img
+                  class="categories__img sneakers"
+                  src="images/content/product-4.png"
+                  alt=""
+                />
+              </picture>
+            </div> </a
+          ><a class="categories__item" href="#">
+            <div class="categories__info-item">
+              <h4 class="categories__info-title">Зимняя</h4>
+              <p class="categories__info-text">150+ товаров</p>
+            </div>
+            <div class="categories__info-img">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="images/content/product-5.webp"
+                  class="categories__img winter"
+                />
+                <source
+                  type="image/jpg"
+                  srcset="images/content/product-5.png"
+                  class="categories__img winter"
+                />
+                <img
+                  class="categories__img winter"
+                  src="images/content/product-5.png"
+                  alt=""
+                />
+              </picture>
+            </div> </a
+          ><a class="categories__item" href="#">
+            <div class="categories__info-item">
+              <h4 class="categories__info-title">Шлепки</h4>
+              <p class="categories__info-text">130+ товаров</p>
+            </div>
+            <div class="categories__info-img">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="images/content/product-6.webp"
+                  class="categories__img flip-flops"
+                />
+                <source
+                  type="image/jpg"
+                  srcset="images/content/product-6.png"
+                  class="categories__img flip-flops"
+                />
+                <img
+                  class="categories__img flip-flops"
+                  src="images/content/product-6.png"
+                  alt=""
+                />
+              </picture>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="offers">
+      <div class="container">
+        <h1 class="offer__title title">Лучшие предложение</h1>
+        <div class="offers__inner">
+          <div class="offers__item offers__item-not-available">
+            <picture>
+              <source
+                type="image/webp"
+                srcset="images/content/shoes-8.webp"
+                class="offers__item-img"
+              />
+              <source
+                type="image/jpg"
+                srcset="images/content/shoes-8.png"
+                class="offers__item-img"
+              />
+              <img
+                class="offers__item-img"
+                src="images/content/shoes-8.png"
+                alt=""
+              />
+            </picture>
+            <button class="offers__item-favorite">
+              <img src="images/icons/black-heart.svg" alt="" />
+            </button>
+            <a class="offers__item-info" href="#"
+              ><span class="offers__item-rate"></span>
+              <h6 class="offers__item-name">New Balance</h6>
+              <p class="offers__item-price">70$</p>
+              <a class="offers__item-buy" href="#">КУПИТИ</a>
+              <p class="offers__item-buy offers__item-out">НЕТ В НАЛИЧИЙ</p>
+            </a>
+          </div>
+          <div class="offers__item">
+            <picture>
+              <source
+                type="image/webp"
+                srcset="images/content/shoes-2.webp"
+                class="offers__item-img"
+              />
+              <source
+                type="image/jpg"
+                srcset="images/content/shoes-2.png"
+                class="offers__item-img"
+              />
+              <img
+                class="offers__item-img"
+                src="images/content/shoes-2.png"
+                alt=""
+              />
+            </picture>
+            <button class="offers__item-favorite">
+              <img src="images/icons/black-heart.svg" alt="" />
+            </button>
+            <a class="offers__item-info" href="#"
+              ><span class="offers__item-rate"></span>
+              <h6 class="offers__item-name">Nike</h6>
+              <p class="offers__item-price">110$</p>
+              <a class="offers__item-buy offers__item-be" href="#">КУПИТИ</a>
+              <p class="offers__item-buy">НЕТ В НАЛИЧИЙ</p>
+            </a>
+          </div>
+          <div class="offers__item">
+            <picture>
+              <source
+                type="image/webp"
+                srcset="images/content/shoes-3.webp"
+                class="offers__item-img"
+              />
+              <source
+                type="image/jpg"
+                srcset="images/content/shoes-3.png"
+                class="offers__item-img"
+              />
+              <img
+                class="offers__item-img"
+                src="images/content/shoes-3.png"
+                alt=""
+              />
+            </picture>
+            <button class="offers__item-favorite">
+              <img src="images/icons/black-heart.svg" alt="" />
+            </button>
+            <a class="offers__item-info" href="#"
+              ><span class="offers__item-rate"></span>
+              <h6 class="offers__item-name">Nike</h6>
+              <p class="offers__item-price">100$</p>
+              <a class="offers__item-buy offers__item-be" href="#">КУПИТИ</a>
+              <p class="offers__item-buy">НЕТ В НАЛИЧИЙ</p>
+            </a>
+          </div>
+          <div class="offers__item offers__item-not-available">
+            <picture>
+              <source
+                type="image/webp"
+                srcset="images/content/shoes-4.webp"
+                class="offers__item-img"
+              />
+              <source
+                type="image/jpg"
+                srcset="images/content/shoes-4.png"
+                class="offers__item-img"
+              />
+              <img
+                class="offers__item-img"
+                src="images/content/shoes-4.png"
+                alt=""
+              />
+            </picture>
+            <button class="offers__item-favorite">
+              <img src="images/icons/black-heart.svg" alt="" />
+            </button>
+            <a class="offers__item-info" href="#"
+              ><span class="offers__item-rate"></span>
+              <h6 class="offers__item-name">Nike Yeezy Sply 350</h6>
+              <p class="offers__item-price">150$</p>
+              <a class="offers__item-buy" href="#">КУПИТИ</a>
+              <p class="offers__item-buy offers__item-out">НЕТ В НАЛИЧИЙ</p>
+            </a>
+          </div>
+          <div class="offers__item">
+            <picture>
+              <source
+                type="image/webp"
+                srcset="images/content/shoes-5.webp"
+                class="offers__item-img"
+              />
+              <source
+                type="image/jpg"
+                srcset="images/content/shoes-5.png"
+                class="offers__item-img"
+              />
+              <img
+                class="offers__item-img"
+                src="images/content/shoes-5.png"
+                alt=""
+              />
+            </picture>
+            <button class="offers__item-favorite">
+              <img src="images/icons/black-heart.svg" alt="" />
+            </button>
+            <a class="offers__item-info" href="#"
+              ><span class="offers__item-rate"></span>
+              <h6 class="offers__item-name">Nike</h6>
+              <p class="offers__item-price">50$</p>
+              <a class="offers__item-buy offers__item-be" href="#">КУПИТИ</a>
+              <p class="offers__item-buy">НЕТ В НАЛИЧИЙ</p>
+            </a>
+          </div>
+          <div class="offers__item">
+            <picture>
+              <source
+                type="image/webp"
+                srcset="images/content/shoes-6.webp"
+                class="offers__item-img"
+              />
+              <source
+                type="image/jpg"
+                srcset="images/content/shoes-6.png"
+                class="offers__item-img"
+              />
+              <img
+                class="offers__item-img"
+                src="images/content/shoes-6.png"
+                alt=""
+              />
+            </picture>
+            <button class="offers__item-favorite">
+              <img src="images/icons/black-heart.svg" alt="" />
+            </button>
+            <a class="offers__item-info" href="#"
+              ><span class="offers__item-rate"></span>
+              <h6 class="offers__item-name">Nike Air Jordan</h6>
+              <p class="offers__item-price">130$</p>
+              <a class="offers__item-buy offers__item-be" href="#">КУПИТИ</a>
+              <p class="offers__item-buy">НЕТ В НАЛИЧИЙ</p>
+            </a>
+          </div>
+        </div>
+        <div class="offers__show">
+          <a class="offers__show-link" href="#">Показать еще</a>
+        </div>
+      </div>
+    </section>
+    <div class="advertisement">
+      <div class="advertisment__inner">
+        <picture>
+          <source
+            type="image/webp"
+            srcset="images/content/advertisement.webp"
+            class="advertisement__img"
+          />
+          <source
+            type="image/jpg"
+            srcset="images/content/advertisement.jpg"
+            class="advertisement__img"
+          />
+          <img
+            class="advertisement__img"
+            src="images/content/advertisement.jpg"
+            alt=""
+          />
+        </picture>
+      </div>
+    </div>
+    <section class="best">
+      <div class="container">
+        <h1 class="best__title title">Товар дня</h1>
+        <h3 class="best__subtitle">
+          Смотри, ничего не пропусти!
+          <span class="best__time"
+            ><span class="best__time-hours"></span>
+            <span class="best__time-minutes"></span>
+            <span class="best__time-seconds"></span
+          ></span>
+        </h3>
+        <div class="best__inner offers__inner">
+          <div class="offers__item">
+            <picture>
+              <source
+                type="image/webp"
+                srcset="images/content/shoes-3.webp"
+                class="offers__item-img"
+              />
+              <source
+                type="image/jpg"
+                srcset="images/content/shoes-3.png"
+                class="offers__item-img"
+              />
+              <img
+                class="offers__item-img"
+                src="images/content/shoes-3.png"
+                alt=""
+              />
+            </picture>
+            <a class="offers__item-info" href="#"
+              ><button class="offers__item-favorite">
+                <img src="images/icons/black-heart.svg" alt="" />
+              </button>
+              <span class="offers__item-rate"></span>
+              <h6 class="offers__item-name">Nike</h6>
+              <p class="offers__item-price">100$</p>
+              <button class="offers__item-buy offers__item-be">КУПИТИ</button>
+              <button class="offers__item-buy">НЕТ В НАЛИЧИЙ</button>
+            </a>
+          </div>
+          <div class="offers__item">
+            <picture>
+              <source
+                type="image/webp"
+                srcset="images/content/shoes-4.webp"
+                class="offers__item-img"
+              />
+              <source
+                type="image/jpg"
+                srcset="images/content/shoes-4.png"
+                class="offers__item-img"
+              />
+              <img
+                class="offers__item-img"
+                src="images/content/shoes-4.png"
+                alt=""
+              />
+            </picture>
+            <a class="offers__item-info" href="#"
+              ><button class="offers__item-favorite">
+                <img src="images/icons/black-heart.svg" alt="" />
+              </button>
+              <span class="offers__item-rate"></span>
+              <h6 class="offers__item-name">Nike Yeezy Sply 350</h6>
+              <p class="offers__item-price">150$</p>
+              <button class="offers__item-buy offers__item-be">КУПИТИ</button>
+              <button class="offers__item-buy">НЕТ В НАЛИЧИЙ</button>
+            </a>
+          </div>
+          <div class="offers__item">
+            <picture>
+              <source
+                type="image/webp"
+                srcset="images/content/shoes-5.webp"
+                class="offers__item-img"
+              />
+              <source
+                type="image/jpg"
+                srcset="images/content/shoes-5.png"
+                class="offers__item-img"
+              />
+              <img
+                class="offers__item-img"
+                src="images/content/shoes5.png"
+                alt=""
+              />
+            </picture>
+            <a class="offers__item-info" href="#"
+              ><button class="offers__item-favorite">
+                <img src="images/icons/black-heart.svg" alt="" />
+              </button>
+              <span class="offers__item-rate"></span>
+              <h6 class="offers__item-name">Nike</h6>
+              <p class="offers__item-price">50$</p>
+              <button class="offers__item-buy offers__item-be">КУПИТИ</button>
+              <button class="offers__item-buy">НЕТ В НАЛИЧИЙ</button>
+            </a>
+          </div>
+          <div class="offers__item">
+            <picture>
+              <source
+                type="image/webp"
+                srcset="images/content/shoes-6.webp"
+                class="offers__item-img"
+              />
+              <source
+                type="image/jpg"
+                srcset="images/content/shoes-6.png"
+                class="offers__item-img"
+              />
+              <img
+                class="offers__item-img"
+                src="images/content/shoes-6.png"
+                alt=""
+              />
+            </picture>
+            <a class="offers__item-info" href="#"
+              ><button class="offers__item-favorite">
+                <img src="images/icons/black-heart.svg" alt="" />
+              </button>
+              <span class="offers__item-rate"></span>
+              <h6 class="offers__item-name">Nike Air Jordan</h6>
+              <p class="offers__item-price">130$</p>
+              <button class="offers__item-buy offers__item-be">КУПИТИ</button>
+              <button class="offers__item-buy">НЕТ В НАЛИЧИЙ</button>
+            </a>
+          </div>
+          <div class="offers__item">
+            <picture>
+              <source
+                type="image/webp"
+                srcset="images/content/shoes-7.webp"
+                class="offers__item-img"
+              />
+              <source
+                type="image/jpg"
+                srcset="images/content/shoes-7.png"
+                class="offers__item-img"
+              />
+              <img
+                class="offers__item-img"
+                src="images/content/shoes-7.png"
+                alt=""
+              />
+            </picture>
+            <a class="offers__item-info" href="#"
+              ><button class="offers__item-favorite">
+                <img src="images/icons/black-heart.svg" alt="" />
+              </button>
+              <span class="offers__item-rate"></span>
+              <h6 class="offers__item-name">Nike</h6>
+              <p class="offers__item-price">110$</p>
+              <button class="offers__item-buy offers__item-be">КУПИТИ</button>
+              <button class="offers__item-buy">НЕТ В НАЛИЧИЙ</button>
+            </a>
+          </div>
+          <div class="offers__item">
+            <picture>
+              <source
+                type="image/webp"
+                srcset="images/content/shoes-8.webp"
+                class="offers__item-img"
+              />
+              <source
+                type="image/jpg"
+                srcset="images/content/shoes-8.png"
+                class="offers__item-img"
+              />
+              <img
+                class="offers__item-img"
+                src="images/content/shoes-8.png"
+                alt=""
+              />
+            </picture>
+            <a class="offers__item-info" href="#"
+              ><button class="offers__item-favorite">
+                <img src="images/icons/black-heart.svg" alt="" />
+              </button>
+              <span class="offers__item-rate"></span>
+              <h6 class="offers__item-name">New Balance</h6>
+              <p class="offers__item-price">70$</p>
+              <button class="offers__item-buy offers__item-be">КУПИТИ</button>
+              <button class="offers__item-buy">НЕТ В НАЛИЧИЙ</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__top-item">
+            <h6 class="footer__top-title">Информация</h6>
+            <ul class="footer__top-list">
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">О компаний</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">Контакты</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">Акции</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">Магазины</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__top-item">
+            <h6 class="footer__top-title">Интернет-магазин</h6>
+            <ul class="footer__top-list">
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">Доставка</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">Обувь</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">Оплата</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">Новости</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__top-item">
+            <ul class="footer__top-list footer__list-social">
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link"
+                  ><img
+                    class="footer__link-img"
+                    src="images/icons/instagram.svg"
+                    alt=""
+                /></a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link"
+                  ><img
+                    class="footer__link-img"
+                    src="images/icons/vk.svg"
+                    alt=""
+                /></a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link"
+                  ><img
+                    class="footer__link-img"
+                    src="images/icons/facebook.svg"
+                    alt=""
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/ion.rangeSlider.min.js"></script>
+    <script src="js/jquery.rateyo.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
